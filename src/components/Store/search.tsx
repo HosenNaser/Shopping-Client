@@ -13,7 +13,7 @@ export default function Search(params: any) {
     if (localStorage.Category === null || localStorage.Category === undefined) {
       if (update) {
         const category = async () => {
-          await fetch("https://vacations-server.onrender.com/category/")
+          await fetch("https://shopping-server-dt7s.onrender.com/category/")
             .then((res) => res.json())
             .then((data) => {
               setUpdate(false);

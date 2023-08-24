@@ -14,7 +14,7 @@ export default function Card({ pro }: any) {
       finalPrice: pro.price,
       cartID: localStorage.ActiveCart,
     };
-    await fetch("https://vacations-server.onrender.com/carts/Item", {
+    await fetch("https://shopping-server-dt7s.onrender.com/carts/Item", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(cart),

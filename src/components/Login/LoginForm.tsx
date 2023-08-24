@@ -13,7 +13,7 @@ export default function LoginForm() {
     setLoading(true);
     setMsg("");
 
-    const res = await fetch("https://vacations-server.onrender.com/users/login", {
+    const res = await fetch("https://shopping-server-dt7s.onrender.com/users/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(userInfo),

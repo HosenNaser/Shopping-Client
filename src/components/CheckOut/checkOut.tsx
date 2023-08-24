@@ -27,7 +27,7 @@ export default function CheckOut(params: { setPopup: Function; total?: Number })
         deliveryDate: deliveryDate.current?.value,
         verification: verification.current?.value,
       };
-      await fetch("https://vacations-server.onrender.com/carts/newOrder", {
+      await fetch("https://shopping-server-dt7s.onrender.com/carts/newOrder", {
         method: "Post",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),

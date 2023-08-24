@@ -9,7 +9,7 @@ export default function Products(params: any) {
     if (localStorage.products === null || localStorage.products === undefined) {
       if (update) {
         const pro = async () => {
-          await fetch("https://vacations-server.onrender.com/products/")
+          await fetch("https://shopping-server-dt7s.onrender.com/products/")
             .then((res) => res.json())
             .then((data) => {
               setUpdate(false);

@@ -12,7 +12,7 @@ export default function UserDetails(params: any) {
   const next = async (e: any) => {
     setMsg("");
     if (values.ID !== "") {
-      const checkID = await fetch("https://vacations-server.onrender.com/users/checkID", {
+      const checkID = await fetch("https://shopping-server-dt7s.onrender.com/users/checkID", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ID: values.ID }),
@@ -27,7 +27,7 @@ export default function UserDetails(params: any) {
       if (!checkID.success) {
         setMsg(checkID.message);
       } else if (values.username !== "") {
-        const checkUser = await fetch("https://vacations-server.onrender.com/users/checkUser", {
+        const checkUser = await fetch("https://shopping-server-dt7s.onrender.com/users/checkUser", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ username: values.username }),

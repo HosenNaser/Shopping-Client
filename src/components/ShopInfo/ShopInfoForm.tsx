@@ -9,7 +9,7 @@ export default function ShopInfoForm() {
   const getInfo = async () => {
     if (flag) {
       setFlag(false);
-      await fetch("https://vacations-server.onrender.com/carts/Available")
+      await fetch("https://shopping-server-dt7s.onrender.com/carts/Available")
         .then((res) => res.json())
         .then((data) => {
           setOrders(data.Orders);
@@ -21,7 +21,7 @@ export default function ShopInfoForm() {
 
       if (localStorage.username) {
         let userID = localStorage.id;
-        await fetch(`https://vacations-server.onrender.com/carts/Cart/Active/${userID}`)
+        await fetch(`https://shopping-server-dt7s.onrender.com/carts/Cart/Active/${userID}`)
           .then((res) => res.json())
           .then((data) => {
             if (data.cart) localStorage.ActiveCart = data.cart._id;

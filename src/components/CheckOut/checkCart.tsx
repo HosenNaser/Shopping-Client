@@ -22,7 +22,7 @@ export default function CheckCart() {
   const cart = async () => {
     if (flag) {
       setFlag(false);
-      await fetch(`https://vacations-server.onrender.com/carts/Cart/${userID}`, {
+      await fetch(`https://shopping-server-dt7s.onrender.com/carts/Cart/${userID}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
       })

@@ -17,7 +17,7 @@ export default function Confirm(params: any) {
     let user = values;
     console.log(user);
 
-    const res = await fetch("https://vacations-server.onrender.com/users/signup", {
+    const res = await fetch("https://shopping-server-dt7s.onrender.com/users/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(user),

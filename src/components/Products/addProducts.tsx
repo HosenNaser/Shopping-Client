@@ -18,7 +18,7 @@ export default function AddProduct(params: { setProPop: Function }) {
       price: price.current?.value,
       image: image.current?.value,
     };
-    const res = await fetch("https://vacations-server.onrender.com/products/Add", {
+    const res = await fetch("https://shopping-server-dt7s.onrender.com/products/Add", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(Data),

@@ -4,7 +4,7 @@ export default function AddCategory(params: { setPopup: Function }) {
   const [name, setName] = useState("");
   const { setPopup } = params;
   const Add = async () => {
-    const res = await fetch("https://vacations-server.onrender.com/category/Add", {
+    const res = await fetch("https://shopping-server-dt7s.onrender.com/category/Add", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name: name }),
