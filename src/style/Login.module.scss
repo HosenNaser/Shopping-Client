@@ -1,0 +1,49 @@
+.Main {
+  display: flex;
+  flex-grow: 1;
+  .Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 0.2fr));
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    font-size: 21px;
+    .Form {
+      box-shadow: 10px 10px 10px gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+      background-color: #eaeaea;
+      border-radius: 20px;
+      padding: 20px;
+      min-width: 350px;
+      height: 500px;
+
+      input {
+        padding: 10px;
+        border-radius: 5px;
+        margin: 5px;
+        background-color: inherit;
+        border: 2px solid #d1512d;
+      }
+      button {
+        cursor: pointer;
+        font-size: 15px;
+        padding: 5px;
+        margin: 2px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        background-color: #d1512d;
+        border: 2px solid #d1512d;
+      }
+      ::placeholder {
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.FormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  .title {
+    padding: 10px;
+  }
+  span {
+    font-size: 22px;
+  }
+  .form {
+    box-shadow: 15px 15px 15px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 400px;
+    table {
+      width: 100%;
+      tr {
+        display: flex;
+        width: 100%;
+        td {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: space-evenly;
+        }
+      }
+    }
+    .Btn {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      button {
+        min-width: 20%;
+      }
+    }
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      margin: 5px;
+      background-color: inherit;
+      border: 2px solid #d1512d;
+    }
+    button {
+      cursor: pointer;
+      font-size: 15px;
+      padding: 5px;
+      margin: 2px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      background-color: #d1512d;
+      border: 2px solid #d1512d;
+    }
+    ::placeholder {
+      color: black;
+    }
+  }
+}

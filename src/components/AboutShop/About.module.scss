@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .img {
+    display: flex;
+    height: 50%;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+  }
+  .info {
+    display: flex;
+    height: 50%;
+  }
+}

@@ -1,0 +1,65 @@
+.background {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    z-index: 2;
+    .top {
+      display: flex;
+      flex-grow: 1;
+      width: 100%;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      .data {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+    }
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      margin: 5px;
+      background-color: inherit;
+      border: 2px solid #d1512d;
+    }
+    button {
+      cursor: pointer;
+      font-size: 15px;
+      padding: 5px;
+      margin: 2px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      background-color: #d1512d;
+      border: 2px solid #d1512d;
+    }
+    ::placeholder {
+      color: black;
+    }
+  }
+  .closer {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+}

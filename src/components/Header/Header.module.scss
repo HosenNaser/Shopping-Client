@@ -1,0 +1,39 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #153041;
+  width: 100%;
+  .title {
+    color: #d1512d;
+    font-size: calc(15px + 1vmin);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  .nav {
+    margin-right: 15px;
+    span {
+      padding: 10px;
+      font-size: calc(10px + 1vmin);
+      color: #f5e8e4;
+      a {
+        color: #f5e8e4;
+
+        font-size: calc(15px + 1vmin);
+      }
+    }
+    button {
+      cursor: pointer;
+      font-size: calc(5px + 1vmin);
+      padding: 5px;
+      margin: 2px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      background-color: #d1512d;
+      border: 2px solid #d1512d;
+    }
+  }
+}

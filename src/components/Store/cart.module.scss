@@ -1,0 +1,44 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  table {
+    width: 100%;
+    padding: 10px;
+    tr {
+      display: flex;
+      width: 100%;
+      td {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    }
+  }
+  .Order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: calc(10px + 1vmin);
+    button,
+    span {
+      margin: 10px;
+      width: 50%;
+    }
+  }
+  button {
+    cursor: pointer;
+    font-size: calc(5px + 1vmin);
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #d1512d;
+    border: 2px solid #d1512d;
+  }
+}
